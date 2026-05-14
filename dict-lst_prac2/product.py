@@ -1,5 +1,5 @@
 class Product:
-    def __init__(self, name : str, price : int = 0):
+    def __init__(self, name, price):
         self.__name = name
         self.__price = price
 
@@ -12,4 +12,4 @@ class Product:
         return self.__price
     
     def __str__(self):
-        return f"{self.__name} : ${self.__price}"
+        return f"{self.__name} = {self.__price}"

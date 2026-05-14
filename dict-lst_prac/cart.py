@@ -7,7 +7,7 @@ class Cart:
     def add_to_cart(self, product):
         if not isinstance(product, Product):
             return f"{self.__cart}: {product} is not in acceptable format."
-        self.__cart.append(product.product_info)
+        self.__cart.append(product)
 
     def __str__(self):
-        return f"Items in cart:\n{self.__cart}"
+        return f"Items in cart:\n{'\n'.join(str(item) for item in self.__cart)}"
