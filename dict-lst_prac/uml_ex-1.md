@@ -13,5 +13,5 @@ class Product{
     +  price ~str~ : ~int~
 }
 
-ShoppingCart <-- Product
+ShoppingCart o-- Product
 :::
